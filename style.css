@@ -1,0 +1,607 @@
+:root {
+    --darkBg: #1d1e24;
+    --darkIn: #212428;
+    --pink: #f9004d;
+    --gradientpink : linear-gradient(145deg, rgba(255,0,0,1) 0%, rgba(249,0,77,1) 100%);
+    --h1Font: #eeeeee;
+    --lightFont: #cecece;
+    --gradientDark: linear-gradient(145deg, rgba(255,0,0,0) 20%, rgba(241,241,241,0.1) 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--lightFont);
+    overflow: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--h1Font);
+    margin: 10px 0;
+}
+.header-image {
+    width: 100%;
+    height: 350px;
+    background-image: url("https://inbio-react.netlify.app/static/7d0974d6bfb4f74a14207d3b22945292/72f33/bg-image-9.webp");
+    background-size: auto;
+    background-position: center;
+}
+.dark-theme {
+    width: 100%;
+    height: 100%;
+    background-color: var(--darkBg);
+    padding-bottom: 30px;
+}
+.contact-info {
+    max-width: 1200px;
+    box-sizing: border-box;
+    width: 95%;
+    background-color: var(--darkIn);
+    border-radius: 10px;
+    margin-top: -90px;
+    padding: 20px;
+}
+.left {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 15px;
+}
+.right {
+    width: 600px;
+    height: 100%;
+    border-left: 3px solid var(--darkBg);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  50% 50%;
+    grid-template-areas:
+            "email" "birthday"
+            "phone" "location";
+    font-size: 16px;
+    padding-left: 20px;
+}
+.thumbnail {
+    background-color: var(--darkBg);
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -80px;
+}
+.thumbnail img {
+    width: 190px;
+    height: 190px;
+}
+.name-status {
+    margin-left: 30px;
+}
+.status-title {
+    font-size: 20px;
+}
+.name {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.icons div {
+    width: 53px;
+    height: 53px;
+    margin-right: 20px;
+    background-color: var(--darkBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons div:hover {
+    transform: translateY(-8px);
+    background-color: var(--pink);
+}
+.icons {
+    margin-top: 35px;
+    color: var(--lightFont);
+}
+.right h4, p {
+    margin: 10px;
+}
+.r-top {
+    margin-top: 22px;
+    margin-left: 60px;
+}
+.r-bottom {
+    margin-top: 22px;
+}
+.email {
+    grid-area: email;
+}
+.birthday {
+    grid-area: birthday;
+}
+.phone {
+    grid-area: phone;
+}
+.location {
+    grid-area: location;
+}
+
+
+.center {
+    max-width: 1200px;
+    box-sizing: border-box;
+    width: 95%;
+    margin-top: 30px;
+}
+.buttons {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 20%;
+    height: 490px;
+    border-radius: 10px;
+    background-color: var(--darkIn);
+    cursor: pointer;
+}
+
+                        /*ABOUT*/
+
+
+.about {
+    width: 75%;
+    border-radius: 10px;
+    background-color: var(--darkIn);
+    padding: 30px 20px;
+}
+.buttons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.buttons div:hover {
+    background-color: var(--pink);
+    color: #ffffff;
+    transform: translateX(5px);
+}
+.block {
+    box-sizing: border-box;
+    width: 100%;
+}
+.block img {
+    width: 370px;
+    height: 490px;
+    border-radius: 10px;
+}
+.aboutMe {
+    padding: 30px;
+}
+.aboutMe h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+.aboutMe p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.aboutMe li{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.aboutMe ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+.subtitle {
+    color: var(--pink);
+    font-size: 14px;
+}
+.download-my-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 57px;
+    background-color: var(--darkBg);
+    border-radius: 10px;
+    color: var(--pink);
+    margin-top: 40px;
+    cursor: pointer;
+    transition: .5s;
+}
+.download-my-cv:hover {
+    background-color: var(--pink);
+    color: var(--h1Font);
+    transform: scale(1.02);
+}
+.what {
+    text-align: center;
+    color: var(--lightFont);
+    font-size: 20px;
+    margin: 30px;
+}
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1d1e24;
+    border-radius: 10px;
+    width: 330px;
+    text-align: center;
+    padding: 20px;
+}
+.service-card i {
+    font-size: 50px;
+    color: var(--pink);
+}
+.client-card {
+    width: 180px;
+    border: #1d1e24 3px solid;
+    border-radius: 10px;
+    transition: .2s;
+}
+.client-card:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(145deg, rgba(255,0,0,0) 0%, rgba(55,55,55,1) 100%);
+}
+.client-card i {
+    font-size: 100px;
+    padding: 20px;
+    color: var(--lightFont);
+}
+.client-card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-top: #1d1e24 3px solid;
+    transition: .8s;
+}
+.client-card div:hover {
+    color: var(--pink);
+}
+.client-card:hover {
+    transform: scale(1.02);
+}
+
+                                /*RESUME*/
+.resume {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    border-radius: 10px;
+    background-color: var(--darkIn);
+    padding: 30px 20px;
+}
+.col-1 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.col-2 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.resume h4 {
+    font-size: 36px;
+}
+.resume-single-list {
+    box-sizing: border-box;
+    width: 100%;
+    height: 260px;
+    border: 2px solid var(--darkBg);
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    overflow: hidden;
+    background: var(--gradientDark);
+    transition: .2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+.title h4 {
+    font-size: 24px;
+}
+.inner p {
+    margin: 20px 0;
+}
+.rating {
+    padding: 5px;
+    height: 30px;
+    background-color: var(--darkBg);
+    border-radius: 10px;
+    color: var(--pink);
+}
+.resume-single-list:hover {
+    transform: scale(1.02);
+}
+
+
+                            /*PROGRESS BAR*/
+
+.bar {
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #878e99;
+    overflow: hidden;
+    transition: .2s;
+}
+.innerBar {
+    height: 100%;
+    background: var(--gradientpink);
+    border-radius: 5px;
+}
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.progress-bar p {
+    margin: 5px 0;
+}
+.bar:hover {
+    transform: scale(1.02);
+}
+
+
+                                /*WORK*/
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 75%;
+    border-radius: 10px;
+    background-color: var(--darkIn);
+    padding: 30px 20px;
+}
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 75%;
+    border-radius: 10px;
+    background-color: var(--darkIn);
+    padding: 30px 20px;
+}
+.work-card {
+    background-color: var(--darkBg);
+    border-radius: 15px;
+    width: 30%;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0-3px 5px;
+}
+.work-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.work-card p {
+    font-size: 23px;
+    margin-left: 0;
+}
+.work-card:hover {
+    transform: scale(1.02);
+}
+                                    /*CONTACT*/
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 75%;
+    border-radius: 10px;
+    background-color: var(--darkIn);
+    padding: 30px 20px;
+}
+
+                                /*BG CHANGE*/
+
+.bgChange {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    margin: 30px;
+}
+.header-image {
+    display: flex;
+    justify-content: end;
+}
+
+                                /*MODAL*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--darkBg);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: var(--darkIn);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+.modal-content div img {
+    width: 500px;
+    margin-right: 20px;
+    margin-bottom: 42px;
+    border-radius: 10px;
+}
+.modal-content p {
+    margin: 10px 0;
+}
+.modal-content h1 {
+    margin: 20px 0;
+}
+.download-my-cv i {
+    margin-left: 10px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+                                  /*FLEX*/
+.d-flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-end {
+    justify-content: end;
+}
+
+.d-none {
+    display: none;
+}
+.mt-30 {
+    margin-top: 30px
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.bgPink {
+    background-color: #f9004d;
+    color: white;
+}
+.mb-42 {
+    margin-bottom: 42px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .contact-info {
+        width: 800px;
+        flex-direction: column;
+    }
+    .right {
+        border: none;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .r-bottom, .r-top{
+        display: flex;
+        margin: 10px;
+    }
+    .email, .birthday, .phone, .location {
+        text-align: center;
+    }
+
+    .left {
+        width: 100%;
+    }
+    .name-status {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .status-title {
+        display: none;
+    }
+    .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .icons div {
+        margin-right: 10px;
+    }
+
+    .center {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons {
+        width: 800px;
+        height: auto;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .res {
+        width: 800px;
+        box-sizing: border-box;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .contact-info {
+        width: 600px;
+        flex-direction: column;
+    }
+    .buttons {
+        width: 600px;
+        height: auto;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .res {
+        width: 600px;
+        box-sizing: border-box;
+    }
+    .block img {
+        width: 250px;
+        height: 300px;
+    }
+    .block-3 {
+        flex-wrap: wrap;
+    }
+    .work {
+        flex-wrap: wrap;
+    }
+    .work-card {
+        width: 228px;
+    }
+
+    .icons {
+        display: none;
+    }
+}
